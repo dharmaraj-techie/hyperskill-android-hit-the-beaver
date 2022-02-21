@@ -1,0 +1,50 @@
+//file:noinspection GroovyAssignabilityCheck
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.properties["config.android.sdk.compile"] as int
+
+    defaultConfig {
+        applicationId "org.hyperskill.hitthebeaver"
+        minSdkVersion rootProject.ext.properties["config.android.sdk.minimum"] as int
+        targetSdkVersion rootProject.ext.properties["config.android.sdk.target"] as int
+        versionCode 1
+        versionName "1.0"
+//        testInstrumentationRunner "com.edu.AndroidEduTestRunner"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
+dependencies {
+    implementation 'androidx.test.ext:junit-ktx:1.1.3'
+    implementation 'androidx.test:runner:1.4.0'
+    testImplementation project(path: ':hyperskill-android-hit-the-beaver-Game_Screen')
+    // Feel free to add your project specified dependencies here.
+    // You can check already defined dependencies in build-src/dependencies.gradle file.
+
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test:rules:1.4.0'
+
+    rootProject.ext.commonDependencies.each { dependency ->
+        add("implementation", dependency.value)
+    }
+    rootProject.ext.testDependencies.each { dependency ->
+        add("testImplementation", dependency.value)
+    }
+    rootProject.ext.androidTestDependencies.each { dependency ->
+        add("androidTestImplementation", dependency.value)
+    }
+}

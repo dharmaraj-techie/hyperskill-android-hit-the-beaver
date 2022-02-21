@@ -1,8 +1,11 @@
 type: hyperskill
-title: hyperskill-android-project-template
+title: hyperskill-android-hit-the-beaver
 language: English
-summary: Hyperskill lesson 436808
+summary: Create a Hit the Beaver game to test your reaction speed! You will build
+  several activities, organize the transition by buttons to a new screen and implement
+  clicks on the buttons that should "catch" the beaver. Once you get 10 points for
+  catching a beaver, you are the winner.
 programming_language: Kotlin
 environment: Android
 content:
-- hyperskill-android-project-template
+- hyperskill-android-hit-the-beaver
