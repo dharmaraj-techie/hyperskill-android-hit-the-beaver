@@ -2,10 +2,13 @@
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion rootProject.ext.properties["config.android.sdk.compile"] as int
+
+    buildFeatures {
+        viewBinding true
+    }
 
     defaultConfig {
         applicationId "org.hyperskill.hitthebeaver"

@@ -1,8 +1,5 @@
 package org.hyperskill.hit.the.beaver
 
-import android.os.Handler
-import android.os.Looper
-import android.os.Looper.getMainLooper
 import android.text.InputType
 import android.view.View
 import android.widget.Button
@@ -13,8 +10,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
-import org.robolectric.Shadows.shadowOf
-import org.robolectric.annotation.LooperMode
 
 
 @RunWith(RobolectricTestRunner::class)
