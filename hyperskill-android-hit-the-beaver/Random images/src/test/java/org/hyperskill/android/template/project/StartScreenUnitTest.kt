@@ -14,6 +14,7 @@ class StartScreenUnitTest {
     fun testSas() {
 
     }
+
 //    @Test
 //    fun testShouldCheckEditTextExist() {
 //        val activity = activityController.setup().get()

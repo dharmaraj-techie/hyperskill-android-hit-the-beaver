@@ -20,7 +20,25 @@ files:
   visible: true
 - name: src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
   visible: true
-- name: src/test/java/org/hyperskill/android/template/project/GameScreenUnitTest.kt
-  visible: false
 - name: src/main/java/org/hyperskill/android/project/template/MainActivity.kt
   visible: true
+- name: src/main/res/layout/activity_game_screen.xml
+  visible: true
+- name: src/main/res/values/dimens.xml
+  visible: true
+- name: src/main/res/values-land/dimens.xml
+  visible: true
+- name: src/main/res/values-w600dp/dimens.xml
+  visible: true
+- name: src/main/res/values-w1240dp/dimens.xml
+  visible: true
+- name: src/main/res/values/themes.xml
+  visible: true
+- name: src/main/java/org/hyperskill/android/project/template/GameScreenActivity.kt
+  visible: true
+- name: src/androidTest/java/org/hyperskill/android/project/template/GameScreenUITest.kt
+  visible: false
+- name: src/androidTest/java/org/hyperskill/android/project/template/AndroidEduTestRunner.kt
+  visible: false
+- name: src/test/java/org/hyperskill/android/template/project/GameScreenUnitTest.kt
+  visible: false

@@ -4,11 +4,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion rootProject.ext.properties["config.android.sdk.compile"] as int
-
-    buildFeatures {
-        viewBinding true
-    }
+      compileSdkVersion rootProject.ext.properties["config.android.sdk.compile"] as int
 
     defaultConfig {
         applicationId "org.hyperskill.hitthebeaver"
@@ -16,9 +12,10 @@ android {
         targetSdkVersion rootProject.ext.properties["config.android.sdk.target"] as int
         versionCode 1
         versionName "1.0"
-//        testInstrumentationRunner "com.edu.AndroidEduTestRunner"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.edu.AndroidEduTestRunner"
+    }
+    buildFeatures {
+        viewBinding true
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
